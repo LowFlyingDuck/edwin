@@ -53,29 +53,23 @@ h3 {
   border-radius: 100%;
   border: 15px solid #9DEC4E;
   clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
-  transform: rotate(180deg);
-}
-
-.container-left {
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 150px;
-  height: 300px;
-  overflow: show;
+  transform: rotate(0deg);
 }
 
 #background {
+  display: none;
   transform: rotate(180deg) !important;
 }
 
-.right {
-  position: absolute;
+#progress {
+  margin: -5px 0 0 -5px;
   width: 300px;
-  height: 300px;
-  margin-left: -100%;
-  border-radius: 100%;
-  border: 15px solid #9DEC4E;
-  clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
-  transform: rotate(200deg);
+  line-height: 300px;
+  font-size: 3em;
+  cursor: default;
+}
+
+#progress::selection {
+  color: inherit;
+  background: transparent;
 }
