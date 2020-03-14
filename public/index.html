@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Data Team Leaf.</title>
+</head>
+<body>
+  <h1>Willkommen, Silvia!</h1>
+  <h3>Bitte geduldige dich einen Augenblick, während deine Applikation vorbereitet wird.</h3>
+  <div class="circle">
+    <div id="lower" class="container">
+      <div class="container-right">
+        <div id="background" class="right"></div>
+        <div id="swiper" class="right"></div>
+      </div>
+      <p class="progress above">0%</p>
+      <div class="progress below">
+        <svg fill="#3b3b3b" id="Capa_1" enable-background="new 0 0 515.556 515.556" height="100" viewBox="0 0 515.556 515.556" width="100"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <script src="app.js" defer></script>
+  <script defer>
+
+    var time;
+    function initiate(iterator=0) {
+      if (iterator < 60) {
+        window.setTimeout(() => {
+          setProgress(iterator);
+          initiate(iterator + 1)
+        }, Math.floor(Math.random() * 100) + 100);
+      } else if (iterator < 100) {
+        window.setTimeout(() => {
+          setProgress(iterator);
+          initiate(iterator + 1)
+        }, Math.floor(Math.random() * 60) + 30);
+      } else if (iterator = 100) {
+        window.setTimeout(() => {
+          setProgress(iterator);
+          document.querySelector('.progress.above').style.animation = 'shift 1s forwards'
+        }, Math.floor(Math.random() * 60) + 30);
+      }
+    }
+    initiate();
+
+  </script>
+</body>
+</html>

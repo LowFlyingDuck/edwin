@@ -1,0 +1,23 @@
+{
+  "name": "edwin-industries",
+  "version": "1.0.0",
+  "description": "Put in here what ever you want...",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/data4040/edwin.git"
+  },
+  "author": "Data Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/data4040/edwin/issues"
+  },
+  "homepage": "https://github.com/data4040/edwin#readme"
+}
