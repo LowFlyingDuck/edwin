@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Put in here what ever you want...",
   "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "start": "node index.js"

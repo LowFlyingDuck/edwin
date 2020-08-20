@@ -7,6 +7,7 @@
   font-family: 'PT Sans', sans-serif;
   color: #3b3b3b;
   text-align: center;
+  outline: none;
 }
 
 body {
@@ -83,6 +84,19 @@ h3 {
 svg {
   display: block;
   margin: 100px auto;
+}
+
+.close-btn {
+  border: 5px solid;
+  border-color: #ebebeb;
+  background: white;
+  margin-top: 5vh;
+  font-size: 2em;
+  padding: 5px 25px;
+  border-radius: 10px;
+  color: #ebebeb;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @keyframes shift {

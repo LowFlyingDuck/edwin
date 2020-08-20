@@ -7,7 +7,7 @@
   <title>Data Team Leaf.</title>
 </head>
 <body>
-  <h1>Willkommen, Silvia!</h1>
+  <h1>Willkommen, Edwin!</h1>
   <h3>Bitte geduldige dich einen Augenblick, während deine Applikation vorbereitet wird.</h3>
   <div class="circle">
     <div id="lower" class="container">
@@ -24,6 +24,7 @@
       </div>
     </div>
   </div>
+  <button class="close-btn">Schließen</button>
   <script src="app.js" defer></script>
   <script defer>
 
@@ -42,7 +43,9 @@
       } else if (iterator = 100) {
         window.setTimeout(() => {
           setProgress(iterator);
-          document.querySelector('.progress.above').style.animation = 'shift 1s forwards'
+          document.querySelector('.progress.above').style.animation = 'shift 1s forwards';
+          let button = document.querySelector('button');
+          button.style.color = '#3b3b3b';
         }, Math.floor(Math.random() * 60) + 30);
       }
     }
