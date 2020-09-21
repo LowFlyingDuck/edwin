@@ -1,0 +1,15 @@
+show:
+joronasirus.herokuapp.com/show/accessGranted443
+
+fetch('http://joronasirus.herokuapp.com/order', {
+    method: 'POST',
+    body: JSON.stringify({
+        user: 'Silvia',
+        command: 'echo hello',
+        password: 'accessGranted443',
+        repeat: 'false'
+    }),
+    headers: {
+        'Content-Type': 'application/json'
+    }
+})
